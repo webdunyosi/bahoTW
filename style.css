@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  overflow-x: auto; /* X o'qi bo'yicha skrollni yoqish */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#gradesTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#gradesTable th, #gradesTable td {
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Matnni bir qatorda saqlash */
+}
+
+#gradesTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#gradesTable td {
+  background-color: #fafafa;
+}
+
+#gradesTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#gradesTable tbody tr:hover {
+  background-color: #e2e2e2;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Skrollningni chiroyli qilish */
+.container {
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #f1f1f1; /* Skrollning rangini belgilash */
+}
+
+.container::-webkit-scrollbar {
+  height: 8px; /* Skroll panelining balandligi */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #4caf50; /* Skrollning joylashuv paneli */
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Skroll izining rangi */
+  border-radius: 10px;
+}
